@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        
+        .main_header_right img{
+            height: 30rem;
+            display: flex;
+            border-radius: 50%;
+            margin: auto;
+            border: 8px solid #3c5365cc;
+        }
+        .social{
+            margin-top:10px ;
+            height: 50px;
+            width: 334px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .social a{
+            margin: auto;
+    height: 35px;
+    width: 35px;
+    display: inline-block;
+    text-align: center;
+    line-height: 35px;
+    padding: 0px 10px;
+    color: #ffffff;
+    border-radius: 50%;
+    margin: 10px 40px;
+    background-color: var(--main-bg);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease; 
+}
+.social a:hover{
+   transform: scale(1.2);
+}
+        
+        
+        .connect{
+            margin-top: 60px;
+            /* border: 2px solid var(--main-color); */
+            background-color: #3c5365cc;
+            border-radius: 5px;
+            color: #fff;
+            padding: 5px 30px;
+        }
+        
+        .fa-chevron-down{
+            font-size: 3rem;
+            position: relative;
+            left: 154px;
+            animation: shake 2s linear    infinite ;
+        }
+        @keyframes shake{
+            0%{
+                transform: translateY(0px);
+            }
+            25%{
+                transform: translateY(10px);
+            }
+            50%{
+                transform: translateY(0px);
+            }
+            75%{
+                transform: translateY(-10px);
+            }
+            100%{
+                transform: translateY(0px);
+            }
+        }
+        
+        @-webkit-keyframes shake{
+            0%{
+                transform: translateY(0px);
+            }
+            25%{
+                transform: translateY(10px);
+            }
+            50%{
+                transform: translateY(0px);
+            }
+            75%{
+                transform: translateY(-10px);
+            }
+            100%{
+                transform: translateY(0px);
+            }
+        }
+        
+        
+        </style>
+<head>
+   {{>headerlinks}}
+
+</head>
+<body>
+    {{>navbar}}
+
+    <!-- ------------------------------------MAin header---------- -->
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+                    <!-- left side div  -->
+                    <div class="col-md-6 col-12 main_header_right">
+                           <img src="./images/WhatsApp Im.jpeg" alt="Anshu's Image">
+                   
+                    </div>
+                    <!-- right side div  -->
+                    <div class="col-md-6 col-12 main_header_left">
+                        
+                            <h1>Hi there, I am <span>Anshu Pandey</span> and I am a Web Developer</h1>
+
+                            <h1 class="connect">Connect with Me</h1>
+                            <i class="fas fa-chevron-down"></i>
+                            <div class="social">
+                                
+                            </a>
+                            <a href="https://github.com/KryptonANSHU" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/anshu-pandey-a67829129/" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="mailto:anshu191001@gmail.com" target="_blank">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+        
+                        </div>
+                           
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------footer--------------- -->
+
+    {{>footer}}
+</body>
+
+</html>
